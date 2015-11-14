@@ -14,8 +14,8 @@
 	<div class="topbar">
 		<div class="topbar-body">
 			<ul class="topbar-body-left" id="head">
-				<li><a href="login.html">[登录]</a></li>
-				<li><a href="register.html" id="selected"><i></i>[注册]</a></li>
+				<li><a href="login.html">登录</a></li>
+				<li><a href="register.html" id="selected"><i></i>注册</a></li>
 			</ul>
 			<ul class="topbar-body-right">
 				<li><a href="" target="_blank"><img src="../images/icon_download.gif">下载App</a></li>
@@ -89,13 +89,14 @@
 	</div>
 </div>
 
+<!-- main body -->
 <div class="wrapper">
 	<div class="container">
 		<div class="main-left">
 			<!-- product-list -->
 			<div class="product-list">
 				<!-- product #1 -->
-				<div class="product">
+				<div class="product shadow-box">
 					<div class="recommand-label"></div>
 					<div class="product-header">
 						<div class="product-pic"></div>
@@ -115,17 +116,298 @@
 						<span>43.49%</span>
 					</div>
 					<div class="product-data">
-						
+						<div class="product-data-column">
+							<div class="product-data-column-title">
+								<big>5.68</big>%
+							</div>
+							<div class="product-data-column-subtitle">
+								复合年化收益率<i></i>
+							</div>
+						</div>
+						<div class="product-data-column-separator"></div>
+						<div class="product-data-column">
+							<div class="product-data-column-title">随时提现</div>
+							<div class="product-data-column-subtitle">投资期限</div>
+						</div>
+						<div class="product-data-column-separator"></div>
+						<div class="product-data-column">
+							<div class="product-data-column-title"><span class="green">143629</span></div>
+							<div class="product-data-column-subtitle">购买人数</div>
+						</div>
+						<div class="product-data-column-separator"></div>
+						<div class="product-data-column">
+							<a class="btn btn-buy " onclick="">立即购买</a>
+						</div>
+					</div>
+				</div>
+				
+				<!-- product #2 -->
+				<div class="product shadow-box">
+					<div class="product-header">
+						<div class="product-pic product-pic-dingqi"></div>
+						<div class="product-title">
+							<h3>迅雷债基宝</h3>
+							<div class="subtitle">
+								<span><i></i>本息保障</span>
+								<span><i class="icon-z"></i>资金安全由阳光保险提供保障</span>
+							</div>
+						</div>
+						<div style="clear:both"></div>
+					</div>
+					<div class="progress-box">
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped" style="width: 86.50%;"></div>
+						</div>
+						<span>即将满额</span>
+					</div>
+					<div class="product-data">
+						<div class="product-data-column">
+							<div class="product-data-column-title">
+								<big>12.00</big>%
+							</div>
+							<div class="product-data-column-subtitle">
+								年化收益率
+							</div>
+						</div>
+						<div class="product-data-column-separator"></div>
+						<div class="product-data-column">
+							<div class="product-data-column-title">121天</div>
+							<div class="product-data-column-subtitle">投资期限</div>
+						</div>
+						<div class="product-data-column-separator"></div>
+						<div class="product-data-column">
+							<div class="product-data-column-title"><span class="green">35907</span></div>
+							<div class="product-data-column-subtitle">购买人数</div>
+						</div>
+						<div class="product-data-column-separator"></div>
+						<div class="product-data-column">
+							<a class="btn btn-buy " onclick="">立即购买</a>
+						</div>
+					</div>
+				</div>
+				
+				<!-- product #3 -->
+				<div class="product shadow-box">
+					<div class="product-header">
+						<div class="product-pic product-pic-dingqi"></div>
+						<div class="product-title">
+							<h3>迅雷安心投</h3>
+							<div class="subtitle">
+								<span><i></i>本息保障</span>
+								<span><i class="icon-z"></i>资金安全由阳光保险提供保障</span>
+							</div>
+						</div>
+						<div style="clear:both"></div>
+					</div>
+					<div class="progress-box">
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped" style="width: 53.70%;"></div>
+						</div>
+						<span>53.70%</span>
+					</div>
+					<div class="product-data">
+						<div class="product-data-column">
+							<div class="product-data-column-title">
+								<big>15.00</big>%
+							</div>
+							<div class="product-data-column-subtitle">
+								年化收益率
+							</div>
+						</div>
+						<div class="product-data-column-separator"></div>
+						<div class="product-data-column">
+							<div class="product-data-column-title">384天</div>
+							<div class="product-data-column-subtitle">投资期限</div>
+						</div>
+						<div class="product-data-column-separator"></div>
+						<div class="product-data-column">
+							<div class="product-data-column-title"><span class="green">12082</span></div>
+							<div class="product-data-column-subtitle">购买人数</div>
+						</div>
+						<div class="product-data-column-separator"></div>
+						<div class="product-data-column">
+							<a class="btn btn-buy " onclick="">立即购买</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		
+		<div class="main-right">
+			<div class="data-container">
+				<div class="data-title"><i class="list"></i>最近购买</div>
+				<div class="ranklist">
+					<ul id="buylog" style="margin-top: -10px;">
+						<li><span>11-14 10:07:00</span><span class="middle">158****6651</span><span class="float-right">6001.00</span></li>
+						<li><span>11-14 10:07:20</span><span class="middle">158****6651</span><span class="float-right">2002.00</span></li>
+						<li><span>11-14 10:07:23</span><span class="middle">158****6651</span><span class="float-right">1003.00</span></li>
+						<li><span>11-14 10:07:40</span><span class="middle">158****6651</span><span class="float-right">5004.00</span></li>
+						<li><span>11-14 10:08:01</span><span class="middle">158****6651</span><span class="float-right">1005.00</span></li>
+						<li><span>11-14 10:08:13</span><span class="middle">158****6651</span><span class="float-right">2006.00</span></li>
+						<li><span>11-14 10:08:13</span><span class="middle">158****6651</span><span class="float-right">1507.00</span></li>
+					</ul>
+				</div>
+			</div>
+		
+			<div class="data-container">
+				<div class="data-title">
+					<i></i>平台统计
+					<span class="subtitle">截止<span id="today">2015/11/14</span></span>
+				</div>
+				<ul class="data-list">
+					<li>
+						<span>昨日购买金额</span>
+						<span class="float-right" id="yesterday_buy">￥30,790,556.00</span>
+					</li>
+					<li>
+						<span>累计投资金额</span>
+						<span class="float-right" id="zong_money">￥1,495,937,792.00</span>
+					</li>
+					<li>
+						<span>累计收益金额</span>
+						<span class="float-right" id="zlixi">￥8,527,670.00</span>
+					</li>
+					<li>
+						<span>累计注册人数</span>
+						<span class="float-right" id="count">240,714</span>
+					</li>
+					<li>
+						<span>当前风险准备金总额</span>
+						<span class="float-right">￥5,881,003.02</span>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="data-container">
+				<div class="data-title">
+					<i class="help"></i>投资帮助
+					<a class="more" href="" target="_blank">更多>></a>
+				</div>
+				<ul class="right-list">
+					<li>
+						01. <a href="/about/recharge" target="_blank">如何充值？</a>
+					</li>
+					<li>
+						02. <a href="/about/question-zc">为什么收不到验证码？</a>
+					</li>
+					<li>
+						03. <a href="/about/media.aspx">提现是否有手续费，是如何进行收费的？</a>
+					</li>
+					<li>
+						04. <a href="/about/question-zh.aspx">银行卡绑定后可以解绑吗？</a>
+					</li>
+					<li>
+						05. <a href="/about/question-cz.aspx">提现到账需要多长时间？</a>
+					</li>
+				</ul>
+			</div>
+		
+		</div>	
 	</div>
 </div>
 
+<!-- partner -->
+<div class="partner-wrapper">
+	<div class="container">
+		<div class="container-box">
+			<div class="data-title">合作伙伴</div>
+			<ul class="row5">
+				<li><img src="../images/partner/partner1.jpg"></li>
+				<li><img src="../images/partner/partner2.jpg"></li>
+				<li><img src="../images/partner/partner3.jpg"></li>
+				<li><img src="../images/partner/partner4.jpg"></li>
+				<li><img src="../images/partner/partner5.jpg"></li>
+				<li><img src="../images/partner/partner6.jpg"></li>
+				<li><img src="../images/partner/partner7.jpg"></li>
+				<li><img src="../images/partner/partner8.jpg"></li>
+				<li><img src="../images/partner/partner9.jpg"></li>
+				<li><img src="../images/partner/partner10.jpg"></li>
+			</ul>
+		</div>
+	</div>
+</div>
 
 <!-- footer -->
 <div class="footer">
+	<div class="container">
+		<ul class="bottom-content">
+			<li class="ewm">
+				<img src="../images/app.png">
+				<p>扫描下载App</p>
+			</li>
+			<li class="menu">
+				<div class="customer-service"><i></i>客服中心</div>
+				<div class="tel">400-600-0173</div>
+				<p>工作时间09:00-21:00</p>
+				<dl>
+					<dd>
+						<a href="http://www.ppjijin.cn/qq.html" target="_blank">
+							<i class="qq"></i>
+							<div class="newpop">在线客服</div>
+						</a>
+					</dd>
+					<dd>
+						<i class="wechart"></i>
+						<div class="newpop newpop-wc">
+							<img src="../images/service_erweima.jpg">
+							<p>官方微信</p>
+						</div>
+					</dd>
+				</dl>
+			</li>
+			<li class="links">
+				<dl>
+					<dt>关于我们</dt>
+					<dd><a href="/about/us.aspx" target="_blank">公司简介</a></dd>
+					<dd><a href="/about/report.aspx" target="_blank">运营月报</a></dd>
+					<dd><a href="/about/jobs.aspx" target="_blank">招贤纳士</a></dd>
+					<dd><a href="/about/contact.aspx" target="_blank">联系我们</a></dd>
+				</dl>
+				<dl>
+					<dt>信任保障</dt>
+					<dd><a href="/Safety.aspx" target="_blank">安全保障</a></dd>
+					<dd><a href="/Reserve.aspx" target="_blank">风险准备金</a></dd>
+					<dd><a href="/riskControl.aspx" target="_blank">风控体系</a></dd>
+				</dl>
+				<dl>
+					<dt>投资帮助</dt>
+					<dd><a href="/about/question-new.aspx" target="_blank">如何投资</a></dd>
+					<dd><a href="/about/question-cz.aspx" target="_blank">充值提现</a></dd>
+				</dl>
+				<dl>
+					<dt>平台公告</dt>
+					<dd><a href="/about/bulletin.aspx" target="_blank">加息活动</a></dd>
+					<dd><a href="/about/bulletin.aspx" target="_blank">额度升级</a></dd>
+					<dd><a href="/about/bulletin.aspx" target="_blank">版本更新</a></dd>
+				</dl>
+			</li>
+		</ul>
+		<div class="bottom-link clearfix">
+			<ul id="bottom-link">
+				<li>友情链接：</li>
+				<li><a href="http://bbs.wdgongshe.com/" target="_blank">迅雷网络</a></li>
+				<li><a href="http://www.wangdaikuaixun.com/" target="_blank">响巢看看</a></li>
+				<li><a href="http://www.wangdaikuaixun.com/" target="_blank">民生银行</a></li>
+				<li><a href="http://www.wangdaikuaixun.com/" target="_blank">天弘基金</a></li>
+				<li><a href="http://www.wangdaikuaixun.com/" target="_blank">南方基金</a></li>
+				<li><a href="http://www.wangdaikuaixun.com/" target="_blank">积木盒子</a></li>
+			</ul>
+		</div>
+		<div class="btm-copyright">
+			<span>
+				迅雷金融&nbsp;&nbsp;©2014-2020&nbsp;&nbsp;
+				<a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备14044227号</a>
+			</span>
+			<a  href="https://search.szfw.org/cert/l/CX20150206006613006716" target="_blank">
+				<img src="../images/magick.jpg">
+			</a>
+			<span id="siteseal">
+				<a href="https://seal.godaddy.com/verifySeal?sealID=SDbEtA19AO6ZBJ3Ntceb58rjY7IEgX618PyJrM4m75eYoG7O587JQJUoa4PF" target="_blank">
+					<img style="cursor:pointer;cursor:hand" src="../images/siteseal_gd_3_h_l_m.gif">
+				</a>
+			</span>
+		</div>
+	</div>
 </div>
 
 <script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>

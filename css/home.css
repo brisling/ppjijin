@@ -14,6 +14,20 @@ ul, li, dl {
     padding: 0;
 }
 
+input {
+    line-height: normal;
+	font: 12px/1.5 'Microsoft YaHei', Î¢ÈíÑÅºÚ, tahoma, arial, sans-serif;
+}
+
+i {
+    font-style: normal;
+    vertical-align: middle;
+}
+
+p {
+    margin: 0px;
+}
+
 a {
     background-color: transparent;
     color: #666;
@@ -96,7 +110,7 @@ topbar-body-right li {
 }
 
 
-.topbar-body-right li:before {
+.topbar-body-left li:before, .topbar-body-right li:before {
     content: "|";
     position: absolute;
     right: -3px;
@@ -104,7 +118,7 @@ topbar-body-right li {
     color: #898989;
 }
 
-.topbar-body-right li:last-child:before {
+.topbar-body-left li:last-child:before, .topbar-body-right li:last-child:before {
     content: "";
 }
 
@@ -310,7 +324,7 @@ topbar-body-right li {
 .product-list .product {
     background: #fff;
     padding: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     border: 1px solid #e8e8e8;
     border-radius: 5px;
     position: relative;
@@ -333,6 +347,13 @@ topbar-body-right li {
     height: 52px;
     width: 52px;
     background: url(../images/hqicons.jpg) no-repeat;
+    float: left;
+}
+
+.product-pic-dingqi {
+	height: 52px;
+    width: 52px;
+    background: url(../images/dqicons.png) no-repeat;
     float: left;
 }
 
@@ -399,5 +420,618 @@ topbar-body-right li {
     right: 0px;
     top: -3px;
 }
+
+.product-data {
+    height: 55px;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    padding: 5px 0;
+}
+
+.product-data-column {
+    position: relative;
+    float: left;
+    width: 24.88%;
+    text-align: center;
+}
+
+.product-data-column-title {
+    color: #898989;
+    font-size: 17px;
+    line-height: 32px;
+    height: 32px;
+}
+
+.product-data-column-title big {
+    font-size: 32px;
+    color: #f43340;
+    font-weight: bold;
+}
+
+.product-data-column-title .green {
+    color: #3eb595;
+    font-weight: bold;
+}
+
+.product-data-column-subtitle {
+    color: #898989;
+    font-size: 13px;
+    position: relative;
+}
+
+.product-data-column-subtitle i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/newicons.png) no-repeat -155px -63px;
+	font-style: normal;
+    vertical-align: middle;
+}
+
+.product-data-column-separator {
+	margin-top: 8px;
+    background: #e8e8e8;
+    height: 34px;
+    width: 1px;
+	float: left;
+}
+
+.product-data .btn-buy {
+    width: 134px;
+    height: 34px;
+    margin: 0 auto;
+    line-height: 34px;
+    margin-top: 10px;
+}
+
+.main-right {
+    width: 290px;
+    float: right;
+}
+
+.data-container {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+    background: #fff;
+    margin-bottom: 15px;
+}
+
+.data-title {
+    position: relative;
+    font-size: 17px;
+    padding-bottom: 6px;
+    color: #898989;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.data-title:before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 90px;
+    height: 1px;
+    background: #3eb595;
+}
+
+.data-title i {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url(../images/newicons.png) no-repeat -65px -105px;
+}
+
+.data-title i.help {
+    background: url(../images/newicons.png) no-repeat -110px -105px;
+}
+
+.data-title i.list {
+    background: url(../images/newicons.png) no-repeat -85px -105px;
+}
+
+.data-title .more {
+    padding-left: 5px;
+    font-size: 12px;
+    color: #3eb595;
+	float: right;
+}
+
+.data-title .subtitle {
+    font-size: 12px;
+    float: right;
+    line-height: 28px;
+}
+
+.data-list {
+    height: 125px;
+}
+
+.data-container ul {
+    padding: 8px 0;
+}
+
+.data-container ul li {
+    border-bottom: 1px dashed #e8e8e8;
+    line-height: 26px;
+    height: 26px;
+    color: #898989;
+}
+
+.data-container ul li .float-right {
+    float: right;
+    color: #3eb595;
+}
+
+.data-container .ranklist {
+    height: 136px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+
+.data-container ul li .middle {
+    margin-left: 20px;
+}
+
+.partner-wrapper {
+    overflow: hidden;
+    width: 100%;
+    background: #fff;
+}
+
+.container-box {
+    padding: 10px;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.container-box .row5 li {
+    float: left;
+    margin: 5px 10px;
+    width: 172px;
+    height: 65px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.footer {
+    padding-top: 30px;
+    background: #2d2d2d;
+    overflow: hidden;
+}
+
+.bottom-content {
+    border-bottom: 1px solid #4c4c4c;
+    height: 165px;
+}
+
+.bottom-content li {
+    float: left;
+}
+
+.bottom-content li.ewm {
+    background: #fff;
+    padding: 5px;
+    width: 112px;
+    margin-right: 60px;
+    text-align: center;
+}
+
+.bottom-content li.ewm img {
+    width: 100%;
+}
+
+.bottom-content li.ewm p {
+    color: #3eb595;
+    background: #fff;
+    line-height: 24px;
+	margin: 0px;
+}
+
+.bottom-content li.menu {
+    width: 218px;
+    height: 145px;
+    color: #c5c5c5;
+    text-align: left;
+    padding-left: 65px;
+    border-left: 1px solid #4c4c4c;
+}
+
+.bottom-content li.menu .customer-service {
+    color: #c5c5c5;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.bottom-content li.menu .tel {
+    color: #3eb595;
+    font-size: 21px;
+}
+
+.bottom-content li.menu p {
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.bottom-content li.menu dl dd {
+    float: left;
+    margin: 10px 10px 10px 0;
+    position: relative;
+}
+
+.bottom-content li.menu dl dd i.qq {
+    display: block;
+    height: 31px;
+    width: 31px;
+    background: url(../images/newicons.png) no-repeat 2px -123px #3c3c3c;
+}
+
+.bottom-content li.menu dl dd:hover i.qq {
+    background: url(../images/newicons.png) no-repeat 2px -147px #3eb595;
+}
+
+.bottom-content li.menu dl dd .newpop {
+    visibility: hidden;
+    position: absolute;
+    min-width: 50px;
+    border: 1px solid #3eb595;
+    background: #fff;
+    color: #898989;
+    padding: 5px;
+    text-align: center;
+    top: 38px;
+    left: -40%;
+}
+
+.bottom-content li.menu dl dd i.wechart {
+	display: block;
+    height: 31px;
+    width: 31px;
+    background: url(../images/newicons.png) no-repeat -57px -123px #3c3c3c;
+}
+
+.bottom-content li.menu dl dd:hover i.wechart {
+    background: url(../images/newicons.png) no-repeat -57px -147px #3eb595;
+}
+
+.bottom-content li.menu dl dd .newpop-wc {
+    left: -120%;
+}
+
+.bottom-content li.menu dl dd .newpop-wc:before {
+    left: 44%;
+}
+
+.bottom-content li.menu dl dd .newpop img {
+    width: 95px;
+}
+
+.bottom-content li.menu p {
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.bottom-content li.links {
+    padding: 0 10px;
+    border-left: 1px solid #4c4c4c;
+}
+
+.bottom-content li.links dl {
+    float: left;
+    margin-left: 50px;
+    width: 75px;
+    text-align: left;
+    color: #c5c5c5;
+}
+
+.bottom-content li.links dl dt {
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.bottom-content li.links dl dd {
+    font-size: 12px;
+    padding-bottom: 5px;
+	margin: 0;
+}
+
+.bottom-content li.links dl dd a {
+    color: #c5c5c5;
+}
+
+.footer .bottom-link {
+    overflow: hidden;
+    box-sizing: content-box;
+    padding: 20px 0;
+}
+
+.bottom-link li {
+    float: left;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #c5c5c5;
+}
+
+.bottom-link li a {
+    text-align: center;
+    display: block;
+    color: #c5c5c5;
+}
+
+.footer .btm-copyright {
+    text-align: center;
+    font-size: 12px;
+    line-height: 30px;
+    color: #c5c5c5;
+}
+
+.btm-copyright a {
+    color: #c5c5c5;
+	margin-right: 15px;
+}
+
+.btm-copyright img {
+    vertical-align: middle;
+    height: 32px;
+	border-radius: 4px;
+}
+
+.bottom-content li.menu dl dd .newpop:before {
+    position: absolute;
+    content: "";
+    top: -17px;
+    left: 35%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/newicons.png) no-repeat -90px -123px;
+}
+
+/*************************************************
+*  bidDetail 
+*************************************************/
+.nav-pill ul {
+    overflow: hidden;
+}
+
+.nav-pill ul li {
+    height: 16px;
+    line-height: 16px;
+    float: left;
+}
+
+.bid-detail {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.bid-detail .bid-detail-left {
+    width: 668px;
+    float: left;
+	background: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    position: relative;
+}
+
+.bid-detail .bid-detail-left .bid-header {
+    margin-bottom: 15px;
+}
+
+.bid-detail-left .bid-pic {
+    height: 52px;
+    width: 52px;
+    background: url(../images/hqicons.jpg) no-repeat;
+    float: left;
+}
+
+.bid-detail-left .bid-title {
+    color: #898989;
+    float: left;
+}
+
+.bid-detail-left .bid-title h3 {
+    font-size: 17px;
+    margin-left: 15px;
+}
+
+.bid-detail-left .subtitle {
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.bid-detail-left .subtitle span {
+    margin-left: 15px;
+}
+
+.bid-detail-left .subtitle i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/newicons.png) no-repeat -5px -105px;
+}
+
+.bid-detail-left .subtitle i.icon-z {
+    background: url(../images/newicons.png) no-repeat -35px -105px;
+}
+
+.bid-detail .bid-data {
+    height: 55px;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    padding: 5px 0;
+}
+
+.bid-detail .bid-data dl {
+    width: 33.3%;
+	position: relative;
+    float: left;
+    text-align: center;
+}
+
+.bid-detail .bid-data dl:before {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 8px;
+    background: #e8e8e8;
+    height: 34px;
+    width: 1px;
+}
+
+.bid-detail .bid-data dl dt {
+    color: #898989;
+    font-size: 17px;
+    line-height: 32px;
+    height: 32px;
+}
+
+.bid-detail .bid-data dl big {
+    font-size: 32px;
+    color: #f43340;
+    font-weight: bold;
+}
+
+.bid-detail .bid-data dl dd {
+    color: #898989;
+    font-size: 13px;
+    position: relative;
+	margin: 0px;
+}
+
+.bid-detail .bid-data dl dd i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/newicons.png) no-repeat -155px -63px;
+}
+
+.bid-detail .bid-data dl dd .hovBox {
+    visibility: hidden;
+    position: absolute;
+    top: 28px;
+    z-index: 10;
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 5px 15px;
+    width: 220px;
+    font-size: 12px;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.bid-detail .bid-data dl .green {
+    color: #3eb595;
+    font-weight: bold;
+}
+
+.bid-detail .bid-data dl:last-child:before {
+    width: 0px;
+}
+
+.bid-statistic-list ul {
+    width: 600px;
+    height: 50px;
+    line-height: 50px;
+    margin: 15px auto 5px;
+}
+
+.bid-statistic-list ul li {
+    float: left;
+    width: 50%;
+    text-align: center;
+    font-size: 12px;
+    color: #898989;
+}
+
+.bid-statistic-list i {
+    display: inline-block;
+    margin-right: 15px;
+    width: 25px;
+    height: 25px;
+    background: url(../images/newicons.png) no-repeat -142px -231px;
+}
+
+.bid-statistic-list li big {
+    vertical-align: bottom;
+    color: #3eb595;
+    font-size: 17px;
+}
+
+.bid-statistic-list i.persons {
+    background: url(../images/newicons.png) no-repeat -179px -231px;
+}
+
+.bid-detail .bid-detail-right {
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    float: right;
+    padding: 10px 0;
+    width: 280px;
+    height: 250px;
+    background: #fff;
+}
+
+.bid-detail .bid-detail-right h4 {
+    font-size: 14px;
+    padding: 5px 20px;
+    color: #898989;
+}
+
+.bid-detail .bid-detail-right h4 a, .bid-detail .bid-detail-right h4 span {
+    float: right;
+    color: #3eb595;
+}
+
+.bid-detail .bid-detail-right .inputBox {
+    margin: 0 20px;
+    border-radius: 4px;
+    border: 1px solid #e8e8e8;
+    background: #f5f5f5;
+    padding: 0 5px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.bid-detail .bid-detail-right .inputBox input {
+    width: 100%;
+    height: 24px;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.bid-detail .bid-detail-right .warning {
+    margin: 6px 20px;
+    min-height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #f43340;
+}
+
+.bid-detail .bid-detail-right .calubox {
+    background: #f5f5f5;
+    padding: 7px 20px;
+    color: #898989;
+    margin-bottom: 10px;
+}
+
+.bid-detail .bid-detail-right a.btn {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.bid-detail .bid-detail-right .direct-login {
+    padding-right: 20px;
+}
+
+
+
+
 
 
