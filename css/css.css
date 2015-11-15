@@ -67,6 +67,12 @@ tbody {
     font-size: 20px;
 }
 
+span.error-tip {
+    height: 24px;
+    color: red;
+    font-size: 12px;
+}
+
 .header {
     background: #f7f7f7;
     height: 30px;
@@ -1323,6 +1329,185 @@ ul.nav-tab li {
     cursor: default;
     background-color: #f5f5f5;
     border-color: #ddd;
+}
+
+
+/*****************************************************************
+* login
+*****************************************************************/
+.login-background {
+    background: url(../images/banner3.jpg) no-repeat 0 0;
+    height: 360px;
+	background-size:100% 100%;
+}
+
+.login-container {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.login-background-text {
+    width: 448px;
+    margin-left: 70px;
+    float: left;
+}
+
+.login-background-text img {
+	height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+}
+
+.login-form-container {
+  background-color: #ffffff;
+  padding: 0px 0px 0px 0px;
+  border-radius: 5px;
+  border: 1px;
+  border-color: #e6e6e6;
+  border-style: solid;
+  box-shadow: 0px 0px 4px #e5e5e5;
+  height: 280px;
+  width: 345px;
+  margin-left: 120px;
+  margin-top: 35px;
+  float: right;
+}
+
+.register-form-container {
+	height: 360px;
+}
+
+.login-form-title-container {
+	height: 40px;
+	margin-bottom: 18px;
+	text-align: left;
+	padding-top: 15px;
+	padding-left: 32px;
+	border-bottom: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #e6e6e6;
+	margin-top: -10px;
+}
+
+.login-form-title {
+	font-size: 16px;
+	line-height: 36px;
+	color: #666;
+	font-weight: normal;
+}
+
+.login-form-item {
+  height: 59px;
+  padding-top: 3px;
+}
+
+.login-form-item-lable {
+  width: 75px;
+  margin: auto;
+  text-align: right;
+  font-size: 14px;
+  color: #666;
+  margin-left: 15px;
+  padding-top: 1px;
+  line-height: 35px;
+  float: left;
+}
+
+input.default {
+    border: 1px solid;
+    border-color: #e6e6e6;
+    height: 15px;
+    padding: 9px 27px 9px 10px;
+    background-color: #FFFFFF;
+    background-position: right;
+    -webkit-box-shadow: none;
+    outline: none;
+    border-radius: 0px;
+    font-size: 13px;
+    position: relative;
+    right: 10px;
+    width: 190px;
+    float: left;
+	color: #666;
+}
+
+.login-form-item-control {
+  margin-left: 105px;
+}
+
+a.protocol {
+  color: #0088cc;
+  text-decoration: none;
+}
+
+input.login {
+  height: 40px;
+  width: 300px;
+  background-color: #3bbd99;
+  font-size: 16px;
+  color: #FFF;
+  text-align:center;
+  margin: auto;
+}
+
+.login-form-login-now-link {
+  float:right;
+  margin-right: 22px;
+  text-decoration: none;
+  margin-top:6px;
+  color:#666;
+}
+
+a.get-phone-code-button {
+  width: 65px;
+  height: 33px;
+  border-radius: 0px;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  color:#333;
+  border: 1px solid #cccccc;
+  line-height:33px;
+  text-decoration: none;
+  display:block;
+  float:left;
+  font-size: 12px;
+  text-align: center;
+}
+
+.login-form-item-lable2 {
+  width: 100px;
+  margin-left:0px;
+  margin-right:5px;
+}
+
+.forget-password {
+  margin-top: 15px;
+  margin-right: 22px;
+  float: right;
+}
+
+.login-form-vertical-seperator {
+  margin-left: 5px;
+  float: left;
+}
+
+a.forget-password-link {
+  color: #666;
+  font-size: 14px;
+  margin-left: 10px;
+  text-decoration: none;
+  float: left;
+}
+
+.register-result {
+	text-align: center;
+	font-size: 24px;
+	margin-top: 30px;
+	margin-bottom: 95px;
+	background: url(../images/icons-login.png) no-repeat 0 center;
+	background-position: 45px -551px;
+	padding-left: 25px;
 }
 
 

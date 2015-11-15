@@ -1,0 +1,465 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>迅雷金融</title>
+
+<link rel="stylesheet" type="text/css" href="../css/css.css" />
+
+</head>
+<body>
+
+<!-- header -->
+<div class="header">
+	<div class="topbar">
+		<div class="topbar-body">
+			<ul class="topbar-body-left" id="head">
+				<li><a href="../home/login.html">登录</a></li>
+				<li><a href="../home/register.html" id="selected"><i></i>注册</a></li>
+			</ul>
+			<ul class="topbar-body-right">
+				<li><a href="" target="_blank"><img src="../images/icon_download.gif">下载App</a></li>
+				<li class="menu">
+					联系客服<i></i>
+					<ul class="menulist">
+						<li><a href="http://www.ppjijin.cn/qq.html" target="_blank">在线客服</a></li>
+						<li class="tel">400 600 0173</li>
+					</ul>
+				</li>
+				<li class="menu">
+					帮助中心<i></i>
+					<ul class="menulist">
+						<li class="que"><a href="/about/media.aspx" target="_blank">常见问题</a></li>
+						<li class="mon"><a href="/about/report.aspx" target="_blank">运营月报</a></li>
+						<li class="note"><a href="/about/bulletin.aspx" target="_blank">平台公告</a></li>
+					</ul>
+				</li>
+				<li><a href="/Guide.aspx" target="_blank">新手指南</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div style="clear"></div>
+
+<!-- nav -->
+<div class="nav">
+	<div class="nav-bar">
+		<a class="nav-logo" href=""></a>
+		<div class="nav-bar-wrapper">
+			<ul>
+				<li><a href="">首页</a></li>
+				<li><a href="">我的资产</a></li>
+				<li><a href="">关于我们</a></li>
+				<li><a href="">安全保障</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!-- main body -->
+<div class="wrapper">
+	<div class="container">
+		<div class="nav-pill ">
+			<ul>
+				<li><a href="/">首页</a>&nbsp;&nbsp;>&nbsp;&nbsp;</li>
+				<li><a href="">迅雷活期宝</a></li>
+			</ul>
+		</div>		
+		<div class="bid-detail">
+			<div class="bid-detail-left shadow-box">
+				<div class="bid-header">
+					<div class="bid-pic"></div>
+					<div class="bid-title">
+						<h3>PP活期</h3>
+						<div class="subtitle">
+							<span><i></i>本息保障</span>
+							<span><i class="icon-z"></i>资金安全由阳光保险提供保障</span>						</div>
+					</div>
+					<div style="clear:both"></div>
+				</div>
+
+				<div class="progress-box">
+					<div class="progress">
+						<div id="useratediv" class="progress-bar progress-bar-striped" style="width:94.94%"></div>
+					</div>
+					<span id="userate">94.94%</span>				
+				</div>
+
+				<div class="bid-data">
+					<dl>
+						<dt><big id="Lilv">10.68</big>%</dt>
+						<dd>
+							复合年化收益<i></i>
+							<div class="hovBox">
+								<p>PP基金活期页面上显示的是复合年化收益率由于PP基金按日复投，所以复利会比单日年化收益高一些</p>
+								<div class="rate">
+									今日PP基金单利<span class="fr"><span class="big" id="rate">10.14</span>%</span>
+								</div>
+								<div class="rate">
+									今日万份收益<span class="fr"><span class="big" id="interest">2.77</span>元</span></div>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>随时提现</dt>
+						<dd>投资期限</dd>
+					</dl>
+					<dl>
+						<dt class="green" id="Rest_money">￥404,479.00</dt>
+						<dd>可购买金额</dd>
+					</dl>
+				</div>
+				
+				<div class="bid-statistic-list">
+					<ul>
+						<li>
+							<i></i>
+							累计成交金额：<big id="usemoney">￥1,227,710,588.59</big>
+						</li>
+						<li>
+							<i class="persons"></i>
+							累计购买人数：<big id="Buycount">143883</big>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="bid-detail-right shadow-box">
+				<h4>账户余额 ：
+					<font id="total_money"><a href="" class="pop_btn2" id="login1">请先登录</a></font>
+				</h4>
+				<div class="inputBox">
+					<input type="text" id="Min_money" class="font1" value="" placeholder="请输入购买金额" onkeyup="value = value.replace(/[^\d]/g, '');jisuan()" onkeydown="jisuan()" onkeypress="jisuan()">
+				</div>
+				<div id="warning" class="warning"></div>
+				<div class="calubox">
+					<p id="shouyi" style="display: none;">预计每日收益：<span id="yuji">0</span>元</p>
+					<p><font id="date">11月14日</font>产生收益，<font id="date1">11月15日</font>显示收益</p>
+				</div>
+				<a onclick="buynew()" id="btn_submit" class="btn">立即购买</a>
+				<div class="direct-login">
+					<span>余额不足？</span><a href="/user/recharge.aspx">立即充值</a>
+				</div>
+			</div>
+		</div>
+		<!-- features -->
+		<div class="bid-detail-feature shadow-box">
+			<ul>
+				<li>
+					<i></i>
+					<span>本息保障</span>
+				</li>
+				<li>
+					<i class="no1"></i>
+					<span>免手续费</span>
+				</li>
+				<li>
+					<i class="no2"></i>
+					<span>T+1日计息</span>
+				</li>
+				<li>
+					<i class="no3"></i>
+					<span>随时赎回</span>
+				</li>
+				<li>
+					<i class="no4"></i>
+					<span>收益复投</span>
+				</li>
+			</ul>
+		</div>
+		<!-- tabs -->
+		<div class="bid-detail-tab">
+			<ul class="nav-tab">
+				<li class="tab on" tab-index="0" id="tab0">产品详情</li>
+				<li class="tab" tab-index="1" id="tab1">安全保障</li>
+				<li class="tab" tab-index="2" id="tab2">购买记录</li>
+			</ul>
+			<div class="tab-pane" id="tab-pane0">
+				<div class="bid-detail-list">
+					<dl>
+						<dt>
+							<h3>产品说明：</h3>
+						</dt>
+						<dd>
+							<p>PP活期产品跟银行活期类似，随存随取。PP活期产品收益较银行高于34倍，但也受到额度限制。它和PP基金每天投资的上千份债权组合挂钩，收益率浮动，是PP基金入门的投资产品。</p>
+						</dd>
+						<dt>
+							<h3>收&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;益：</h3>
+						</dt>
+					</dl>
+					<dl>
+						<dd>
+							<p>浮动收益，根据每日PP活期页面上显示的利率计算当日收益。PP活期页面上展示的是复合年化利率，由于PP活期会按日复投，所以这个值会比单日年化收益率高一些。举例来说，页面上展示的当日年化利率为12%，若您存10000元，通过每日利息复投，一年后您的活期资产将变为11200元。</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<h3>产品期限：</h3>
+						</dt>
+						<dd>
+							<p>随存随取</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<h3>保障方式：</h3>
+						</dt>
+						<dd>
+							<p>本息保障</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<h3>投资门槛：</h3>
+						</dt>
+						<dd>
+							<p>1元起投，单人投资上限50000元；可升级，最高活期限额30万。</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<h3>资产组合：</h3>
+						</dt>
+						<dd>
+							<a href="/plan/combination.aspx" class="btn" style="width:120px;font:12px;">资产详情</a>	 
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<h3>赎回方式：</h3>
+						</dt>
+						<dd>
+							<p>随时可赎回。赎回可选择到账余额账户或到账银行卡账户；赎回余额账户秒到，21点前赎回银行卡当天到账。</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<h3>费&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用：</h3>
+						</dt>
+						<dd>
+							<p>PP基金不收取任何管理费、手续费。</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<h3>收益计算：</h3>
+						</dt>
+						<dd>
+							<p>收益复投。假如您存10000元在PP活期中，根据当日复合年化收益率获得3.8元收益，第二天PP基金会将这3.8元放入您持有的活期份额中，并同10000元一起作为本金继续投资。 也就是说，第二天你投资的活期本金为10003.8元。依次类推，您每天投资的的活期本金是前一天的本金加收益。</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<h3>计息方式：</h3>
+						</dt>
+						<dd>
+							<p>当日计息，第二天付息，可在资产中心查看收益。</p>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="tab-pane" id="tab-pane1">
+				<div class="bid-detail-list">
+					<dl>
+						<dt><i></i></dt>
+						<dd>
+							<h5>账户资金安全由阳光保险提供保障</h5>
+							<p>若因为PP基金账户安全问题，导致PP基金用户的理财资金发生转移并遭受损失，阳光保险将按合同条款赔付。</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><i class="pic1"></i></dt>
+						<dd>
+							<h5>工商银行风险金监管</h5>
+							<p>PP基金3%交易风险金由工商银行风险金全权托管，工商银行风险金托管银行回单扫描件即将公布在网站。</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><i class="pic2"></i></dt>
+						<dd>
+							<h5>第三方资金托管，平台不碰资金</h5>
+							<p>用户投资的资金均有易宝支付全程托管，防止平台直接触碰用户的资金，确保用户的资金安全。</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><i class="pic3"></i></dt>
+						<dd>
+							<h5>风险准备金+回购计划</h5>
+							<p>PP基金从每一笔成功借款提取一部分资金置入备用金账户，当合作机构有借款发生严重逾期时，通过风险准备金100%对用户本金先行垫付。倘若合作机构内借款出现坏账，并且金额超出风险备用金总额，PP基金将回购坏账。</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><i class="pic4"></i></dt>
+						<dd>
+							<h5>保障本息</h5>
+							<p>合作机构提供全额的连带责任本息担保，通过严格的合作前审核确保其在出现风险事项时可以及时、足额对投资人进行代偿。同时依据项目特性及融资人的资产优势，引入再担保、反担保措施，为每一个融资人设计高效的、可操作的担保方案。</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><i class="pic5"></i></dt>
+						<dd>
+							<h5>优选合作机构，落实尽职调查</h5>
+							<p>PP基金优先选择知名有实力的金融机构合作，并对合作平台融资项目进行360度尽职调查，调查报告的数据由实地调查数据、人民银行征信系统数据、工商局系统数据房管局系统数据等组成。对融资性项目实现立体化多层级的数据采集，以确保项目及融资需求真实、合法，为风险把控提供可信依据</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><i class="pic6"></i></dt>
+						<dd>
+							<h5>智能分散投资</h5>
+							<p>选取来自上百家理财平台的上千份债权，通过后台模型的智能计算，生成每日的债权包组合。即使您只参与一元钱的计划，也可以购买到上千份的债权。极度分散的投资，使您无需担心个别平台的逾期与坏帐风险。</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><i class="pic7"></i></dt>
+						<dd>
+							<h5>所有操作合法有效</h5>
+							<p>一切合同和规章制度将由我们的法律顾问和专业的金融机构一同起草，保证投资人在平台上的所有操作都合法有效。</p>
+						</dd>
+
+					</dl>
+				</div>
+			</div>
+			<div class="tab-pane in" id="tab-pane2">
+				<div class="bid-detail-list">
+					<table id="buylog">
+						<tbody>
+							<tr>
+								<th>购买用户</th>
+								<th>购买时间</th>
+								<th>购买金额</th>
+							</tr>
+							<tr>
+								<td>152****9831</td>
+								<td>2015-11-15 09:06:54</td>
+								<td>￥1500.00</td>
+							</tr>
+							<tr>
+								<td>152****9831</td>
+								<td>2015-11-15 09:06:54</td>
+								<td>￥1000.00</td>
+							</tr>
+							<tr>
+								<td>152****9831</td>
+								<td>2015-11-15 09:06:54</td>
+								<td>￥1200.00</td>
+							</tr>
+							<tr>
+								<td>152****9831</td>
+								<td>2015-11-15 09:06:54</td>
+								<td>￥1500.00</td>
+							</tr>
+							<tr>
+								<td>152****9831</td>
+								<td>2015-11-15 09:06:54</td>
+								<td>￥1000.00</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="pagebox_wrapper">
+						<div id="demo5" class="pagination">
+							<li class="first disabled"><a href="javascript:void(0);">首页</a></li>
+							<li class="prev disabled"><a href="javascript:void(0);"><i class="arrow arrow2"></i>上一页</a></li>
+							<li class="page active"><a href="javascript:void(0);">1</a></li>
+							<li class="page"><a href="javascript:void(0);">2</a></li>
+							<li class="page"><a href="javascript:void(0);">3</a></li>
+							<li class="page"><a href="javascript:void(0);">4</a></li>
+							<li class="page"><a href="javascript:void(0);">5</a></li>
+							<li class="page"><a href="javascript:void(0);">6</a></li>
+							<li class="next"><a href="javascript:void(0);">下一页<i class="arrow arrow3"></i></a></li>
+							<li class="last"><a href="javascript:void(0);">末页</a></li>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- footer -->
+<div class="footer">
+	<div class="container">
+		<ul class="bottom-content">
+			<li class="ewm">
+				<img src="../images/app.png">
+				<p>扫描下载App</p>
+			</li>
+			<li class="menu">
+				<div class="customer-service"><i></i>客服中心</div>
+				<div class="tel">400-600-0173</div>
+				<p>工作时间09:00-21:00</p>
+				<dl>
+					<dd>
+						<a href="http://www.ppjijin.cn/qq.html" target="_blank">
+							<i class="qq"></i>
+							<div class="newpop">在线客服</div>
+						</a>
+					</dd>
+					<dd>
+						<i class="wechart"></i>
+						<div class="newpop newpop-wc">
+							<img src="../images/service_erweima.jpg">
+							<p>官方微信</p>
+						</div>
+					</dd>
+				</dl>
+			</li>
+			<li class="links">
+				<dl>
+					<dt>关于我们</dt>
+					<dd><a href="/about/us.aspx" target="_blank">公司简介</a></dd>
+					<dd><a href="/about/report.aspx" target="_blank">运营月报</a></dd>
+					<dd><a href="/about/jobs.aspx" target="_blank">招贤纳士</a></dd>
+					<dd><a href="/about/contact.aspx" target="_blank">联系我们</a></dd>
+				</dl>
+				<dl>
+					<dt>信任保障</dt>
+					<dd><a href="/Safety.aspx" target="_blank">安全保障</a></dd>
+					<dd><a href="/Reserve.aspx" target="_blank">风险准备金</a></dd>
+					<dd><a href="/riskControl.aspx" target="_blank">风控体系</a></dd>
+				</dl>
+				<dl>
+					<dt>投资帮助</dt>
+					<dd><a href="/about/question-new.aspx" target="_blank">如何投资</a></dd>
+					<dd><a href="/about/question-cz.aspx" target="_blank">充值提现</a></dd>
+				</dl>
+				<dl>
+					<dt>平台公告</dt>
+					<dd><a href="/about/bulletin.aspx" target="_blank">加息活动</a></dd>
+					<dd><a href="/about/bulletin.aspx" target="_blank">额度升级</a></dd>
+					<dd><a href="/about/bulletin.aspx" target="_blank">版本更新</a></dd>
+				</dl>
+			</li>
+		</ul>
+		<div class="bottom-link clearfix">
+			<ul id="bottom-link">
+				<li>友情链接：</li>
+				<li><a href="http://bbs.wdgongshe.com/" target="_blank">迅雷网络</a></li>
+				<li><a href="http://www.wangdaikuaixun.com/" target="_blank">响巢看看</a></li>
+				<li><a href="http://www.wangdaikuaixun.com/" target="_blank">民生银行</a></li>
+				<li><a href="http://www.wangdaikuaixun.com/" target="_blank">天弘基金</a></li>
+				<li><a href="http://www.wangdaikuaixun.com/" target="_blank">南方基金</a></li>
+				<li><a href="http://www.wangdaikuaixun.com/" target="_blank">积木盒子</a></li>
+			</ul>
+		</div>
+		<div class="btm-copyright">
+			<span>
+				迅雷金融&nbsp;&nbsp;©2014-2020&nbsp;&nbsp;
+				<a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备14044227号</a>
+			</span>
+			<a  href="https://search.szfw.org/cert/l/CX20150206006613006716" target="_blank">
+				<img src="../images/magick.jpg">
+			</a>
+			<span id="siteseal">
+				<a href="https://seal.godaddy.com/verifySeal?sealID=SDbEtA19AO6ZBJ3Ntceb58rjY7IEgX618PyJrM4m75eYoG7O587JQJUoa4PF" target="_blank">
+					<img style="cursor:pointer;cursor:hand" src="../images/siteseal_gd_3_h_l_m.gif">
+				</a>
+			</span>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../js/bidDetail.js"></script>
+</body>
+</html>
