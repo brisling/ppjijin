@@ -60,54 +60,19 @@
     <div class="container register-container">
     
         <div style="float:left; height:300px; width:200px;"></div>
-        <!-- login form -->
-        <div class="register-form-container">
-            <form action="/doRegisterStep1" method="post" id="register-form">
+        <!-- register form -->
+        <div class="register-form-container register-step3-form-container">
+            <form action="" method="post">
                 <div class="login-form-title-container">
-                    <span class="login-form-title">10秒快速注册</span>
+                    <span class="login-form-title">用户注册</span>
                 </div>
-                <div class="minsheng_hint">
-                    <h3>
-                        <img src="../images/cmbc-logo-mini.png" class="cmbc-logo">迅雷金融资金由民生银行全程托管
-                    </h3>
+            	<div class="register-result">恭喜您，注册成功！</div>
+                <div class="register-result-tuoguan">
+                	<span>开通第三方资金托管账户<br/>保证资金安全</span>
                 </div>
-                <!-- phone -->
-                <div class="login-form-item">
-                    <label class="login-form-item-lable"><span class="error-tip">*</span>手机号：</label>
-                    <div class="login-form-item-control">
-                        <input type="text" class="default" id="phone" value="" name="phone" placeholder="请填写电话号码" autocomplete="false">
-                        <span id="reg-err-phone" class="error-tip"></span>
-                    </div>
-                </div>
-                <!-- verify code -->
-                <div class="login-form-item">
-                    <label class="login-form-item-lable"><span class="error-tip">*</span>校验码：</label>
-                    <div class="login-form-item-control">
-                        <input type="text" class="default verify-code" id="verifyCode"  name="verifyCode" placeholder="请填写校验码" autocomplete="false">
-                        <img class="verify-code-img" src="${pageContext.request.contextPath}/verification_code" width="70px", height="35px"><br>
-                        <span id="reg-err-verify-code" class="error-tip"></span>
-                    </div>
-                </div>
-                <!-- invite code -->
-                <div class="login-form-item">
-                    <label class="login-form-item-lable">邀请码：</label>
-                    <div class="login-form-item-control">
-                        <input type="text" class="default" id="invite-code" value="" name="inviteCode" placeholder="选填" autocomplete="false">
-                        <span id="reg-err-invite-code" class="error-tip"></span>
-                    </div>
-                </div>
-                <!-- check user protocol -->
-                <div class="agree-protocol">
-                    <input type="checkbox" class="default check-protocol" id="check-protocol" value="" name="checkProtocol" checked>
-                    我已阅读并同意
-                    <a class="protocol" href="#">《用户注册协议》</a>
-                    <span id="reg-err-check-protocol" class="error-tip"><br>&nbsp;</span>
-                </div>
-                <!-- submit button -->
-                <input type="submit" class="btn login" value="立即注册">
-                <!-- login now -->
-                <a href="${pageContext.request.contextPath}/login" class="login-form-login-now-link">已有账号？登录</a>
-			</form>
+                <input type="button" class="btn login" value="立即开通" id="openAccount"><br />
+                <div class="register-result-tuoguan"><a href="">暂不开通</a></div>
+            </form>
         </div>
     
     </div>
@@ -204,6 +169,5 @@
 <script type="text/javascript" src="../js/additional_methods.js"></script>
 <script type="text/javascript" src="../js/jquery.form.js"></script>
 <script type="text/javascript" src="../js/md5.js"></script>
-<script type="text/javascript" src="../js/registerStep1.js"></script>
 </body>
 </html>

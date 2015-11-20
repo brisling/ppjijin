@@ -1,0 +1,329 @@
+.main-body-background {
+  /* background-color: #f0f4f7; */
+  background-color: #eee; 
+  font-family: 'Microsoft Yahei';
+  min-width: 1110px;
+  min-height: 200px;
+}
+
+.home-nav {
+  background-color: #f9f9f9;
+  width: 260px;
+  border: 1px;
+  border-color: #e6e6e6;
+  border-style: solid;
+  padding-bottom: 40px;
+  min-height: 715px;
+  float:left;
+}
+
+.home-nav-1 {
+  height: 60px;
+  padding-left: 36px;
+  font-size: 14px;
+  color: #666666;
+  line-height: 60px;
+}
+
+.home-nav-2 {
+  padding-left: 36px;
+  padding-top: 0px;
+  padding-bottom: 13px;
+}
+
+.home-nav-2-1 {
+  font-size: 16px;
+  color: #808080;
+  margin: 0px 0px;
+  line-height: 16px;
+}
+
+.home-nav-2-2 {
+  margin: 0px 0px;
+  padding: 18px 0px;
+  font-size: 32px;
+  color: #666;
+  line-height: 34px;
+}
+
+.home-nav .button {
+    display: inline-block;
+    color: #fff;
+    border-radius: 5px;
+    line-height: 36px;
+    text-align: center;
+    padding: 0px 30px;
+    margin-bottom: 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border: none;
+    font-family: 'Microsoft YaHei';
+}
+
+.home-nav .button-recharge, .home-nav .button-withdraw {
+    padding: 0 20px;
+    font-size: 15px;
+    background-color: #ff473a;
+    margin-right: 17px;
+}
+
+.home-nav .button-withdraw {
+	background-color: #c4cbd9;
+}
+
+.home-nav-3 {
+  padding: 0px 0px;
+  border-top: 1px;
+  border-top-color: #e6e6e6;
+  border-top-style: solid;
+}
+
+.home-nav-3-list {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 0 10px 25px;
+  margin-bottom: 0;
+  margin-left: 0;
+  list-style: none;
+}
+
+.home-nav-3-header {
+  padding-left: 21px;
+  padding-top: 36px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  color: #666666;
+}
+
+.home-nav-3-item, .home-nav-3-header {
+  list-style: none;
+  vertical-align: top;
+  line-height: 20px;
+}
+
+.home-nav-3-item {
+  padding-left: 65px;
+  display: block;
+}
+
+a.home-nav-3-title {
+  color: #666666;
+  font-size: 14px;
+  height: 30px;
+  padding-top:3px;
+  padding-bottom:3px;
+  text-align: left;
+  line-height: 30px;
+}
+
+.home-nav-3-icon {
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin-top: 5px;
+  margin-right: 8px;
+  display: inline-block;
+}
+
+.home-nav-3-icon-1 {
+  background: url(../images/icons-ic.png) no-repeat;
+  background-position: 0px -20px;
+}
+
+.home-nav-3-icon-3 {
+  background: url(../images/icons-ic.png) no-repeat;
+  background-position: -40px -20px;
+}
+
+.home-nav-3-icon-6 {
+  background: url(../images/icons-ic.png) no-repeat;
+  background-position: -100px -20px;
+}
+
+.home-nav-3-icon-7 {
+  background: url(../images/icons-ic.png) no-repeat;
+  background-position: -120px -20px;
+}
+
+.home-nav-3-icon-8 {
+  background: url(../images/icons-ic.png) no-repeat;
+  background-position: -140px -20px;
+}
+
+.home-nav-3-icon-1-w {
+  background: url(../images/icons-ic.png) no-repeat;
+  background-position: 0px 0px;
+}
+
+.right-area-container {
+  width: 686px;
+  background-color: #ffffff;
+  float: left;
+  border: 1px;
+  border-color: #e6e6e6;
+  border-style: solid;
+  min-height: 725px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+
+.accountView-top {
+  height: 194px;
+  border-bottom: 1px;
+  border-bottom-color: #e6e6e6;
+  border-bottom-style: solid;
+}
+
+.accountView-top-left {
+  width: 308px;
+  height: 110px;
+  float: left;
+  /* padding-left: 78px; */
+  padding-top: 60px;
+}
+
+.accountView-title {
+  font-size:14px;
+}
+
+.accountView-number {
+  font-size:32px;
+  color:#666;
+}
+
+.accountView-top-left-notice {
+  width: 15px;
+  padding-left: 50px;
+  margin-top: -86px;
+}
+
+.account-overview-box {
+  padding: 10px 15px;
+  position: relative;
+  width: 230px;
+  height: 20px;
+  left: -127px;
+  top: 17px;
+  display: none;
+  border: 1px solid #c5c5c5;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 6px #8a8a8a;
+  background: #fff;
+  color: #444;
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+.account-overview-box .arrow3 {
+  position: absolute;
+  height: 13px;
+  width: 20px;
+  background: url(../images/n_sm_sp.png) no-repeat -91px 0px;
+  top: -12px;
+  left: 124px;
+}
+
+.account-overview-box .arrow3-box {
+  margin-left: 15px;
+}
+
+.accountView-top-right {
+  padding-left: 30px;
+  padding-top: 57px;
+  height: 110px;
+  float: left;
+  width: 340px;
+}
+
+.accountView-top-right-notice2 {
+  width: 15px;
+  padding-left: 78px;
+  margin-top: -86px;
+}
+
+.accountView-top-right-notice2 .account-overview-box2 {
+  padding: 10px 15px;
+  position: relative;
+  width: 305px;
+  height: 23px;
+  right: 163px;
+  top: 17px;
+  display: none;
+  border: 1px solid #c5c5c5;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 6px #8a8a8a;
+  background: #fff;
+  color: #444;
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+.account-overview-box2 .arrow4 {
+  position: absolute;
+  height: 13px;
+  width: 20px;
+  background: url(../images/n_sm_sp.png) no-repeat -91px 0px;
+  top: -12px;
+  left: 160px;
+}
+
+.accountView-top-right-notice2 .account-overview-box2 {
+  padding: 10px 15px;
+  position: relative;
+  width: 305px;
+  height: 23px;
+  right: 163px;
+  top: 17px;
+  display: none;
+  border: 1px solid #c5c5c5;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 6px #8a8a8a;
+  background: #fff;
+  color: #444;
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+.invest-record {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0px 0px;
+  text-align: left;
+  font-size: 14px;
+  color: #666;
+}
+
+.invest-record-table {
+  max-width: 100%;
+  background-color: transparent;
+  border-color: gray;
+  border-width: 1px;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  border: 1px solid #e8e8e8;
+}
+
+table.invest-record-table tr:nth-child(odd) {
+    background: #f4f4f4;
+}
+
+/*
+.invest-record-thead {
+  background-color: #f9f9f9;
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+*/
+.invest-record-table th, .invest-record-table td {
+  padding: 8px;
+  line-height: 32px;
+  border-right: 1px dashed #e8e8e8;
+}
+
+.invest-record-table th {
+	color: #333;
+}
+  

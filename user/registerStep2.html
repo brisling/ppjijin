@@ -61,53 +61,49 @@
     
         <div style="float:left; height:300px; width:200px;"></div>
         <!-- login form -->
-        <div class="register-form-container">
-            <form action="/doRegisterStep1" method="post" id="register-form">
+        <div class="register-form-container register-step2-form-container">
+            <form action="/do_register_step_2" method="post" id="register-form">
                 <div class="login-form-title-container">
-                    <span class="login-form-title">10秒快速注册</span>
+                    <span class="login-form-title">最后一步</span><span class="">（短信验证码已发送到手机）</span>
                 </div>
                 <div class="minsheng_hint">
                     <h3>
                         <img src="../images/cmbc-logo-mini.png" class="cmbc-logo">迅雷金融资金由民生银行全程托管
                     </h3>
                 </div>
-                <!-- phone -->
-                <div class="login-form-item">
-                    <label class="login-form-item-lable"><span class="error-tip">*</span>手机号：</label>
-                    <div class="login-form-item-control">
-                        <input type="text" class="default" id="phone" value="" name="phone" placeholder="请填写电话号码" autocomplete="false">
-                        <span id="reg-err-phone" class="error-tip"></span>
-                    </div>
-                </div>
                 <!-- verify code -->
                 <div class="login-form-item">
-                    <label class="login-form-item-lable"><span class="error-tip">*</span>校验码：</label>
+                    <label class="login-form-item-lable login-form-item-lable2"><span class="error-tip">*</span>短信验证码：</label>
                     <div class="login-form-item-control">
-                        <input type="text" class="default verify-code" id="verifyCode"  name="verifyCode" placeholder="请填写校验码" autocomplete="false">
-                        <img class="verify-code-img" src="${pageContext.request.contextPath}/verification_code" width="70px", height="35px"><br>
+                        <input type="text" class="default verify-code" id="verify-code" value="" name="verifyCode" placeholder="演示版，随便填" autocomplete="false">
+                        <a id="get-phone-code" class="get-phone-code-button" href="${pageContext.request.contextPath}/SMSCode"><span id="get-phone-code-button-text">重新发送</span></a>
                         <span id="reg-err-verify-code" class="error-tip"></span>
                     </div>
                 </div>
-                <!-- invite code -->
+                <!-- password -->
                 <div class="login-form-item">
-                    <label class="login-form-item-lable">邀请码：</label>
+                    <label class="login-form-item-lable login-form-item-lable2"><span class="error-tip">*</span>设置密码：</label>
                     <div class="login-form-item-control">
-                        <input type="text" class="default" id="invite-code" value="" name="inviteCode" placeholder="选填" autocomplete="false">
-                        <span id="reg-err-invite-code" class="error-tip"></span>
+                        <input type="password" class="default" id="password" value="" name="password" placeholder="请输入密码" autocomplete="false">
+                        <span id="reg-err-password" class="error-tip"></span>
+                        <input type="hidden" class="default" id="passwordMD5" name="passwordMD5" value="" >
                     </div>
                 </div>
-                <!-- check user protocol -->
-                <div class="agree-protocol">
-                    <input type="checkbox" class="default check-protocol" id="check-protocol" value="" name="checkProtocol" checked>
-                    我已阅读并同意
-                    <a class="protocol" href="#">《用户注册协议》</a>
-                    <span id="reg-err-check-protocol" class="error-tip"><br>&nbsp;</span>
+                <!-- confirm password -->
+                <!--
+                <div class="login-form-item">
+                    <label class="login-form-item-lable login-form-item-lable2"><span class="error-tip">*</span>确认密码：</label>
+                    <div class="login-form-item-control">
+                        <input type="password" class="default" id="passwordConfirm" value="" name="passwordConfirm" placeholder="请再次输入密码" autocomplete="false">
+                        <span id="reg-err-password-confirm" class="error-tip"></span>
+                    </div>
                 </div>
+                -->
                 <!-- submit button -->
-                <input type="submit" class="btn login" value="立即注册">
+                <input type="submit" class="btn register-step2-btn" value="完成注册" id="submit-button">
                 <!-- login now -->
                 <a href="${pageContext.request.contextPath}/login" class="login-form-login-now-link">已有账号？登录</a>
-			</form>
+            </form>
         </div>
     
     </div>
@@ -204,6 +200,6 @@
 <script type="text/javascript" src="../js/additional_methods.js"></script>
 <script type="text/javascript" src="../js/jquery.form.js"></script>
 <script type="text/javascript" src="../js/md5.js"></script>
-<script type="text/javascript" src="../js/registerStep1.js"></script>
+<script type="text/javascript" src="../js/registerStep2.js"></script>
 </body>
 </html>
